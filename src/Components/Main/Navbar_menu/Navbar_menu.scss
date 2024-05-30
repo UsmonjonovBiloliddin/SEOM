@@ -1,0 +1,113 @@
+@use "../../Varible/Varible.scss" as *;
+
+.Menu {
+  width: 80%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s linear;
+  z-index: 2;
+  background-color: var(--white);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &.active {
+    left: 0;
+  }
+
+  .Menu_logo {
+    @include center;
+    justify-content: start;
+    gap: 15px;
+    position: relative;
+    img {
+      width: 40px;
+    }
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      cursor: pointer;
+      color: var(--black);
+    }
+    .text {
+      p {
+        font-size: .9rem;
+        color: var(--gray);
+      }
+    }
+  }
+  .Menu_adress {
+    @extend .Menu_logo;
+    align-items: start;
+    .radio {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      @include center;
+      color: var(--main);
+      border: 1px solid #D9D9D9;
+      font-size: 1.3rem;
+    }
+    .text {
+      width: 80%;
+      line-height: 20px;
+      p {
+        color: var(--gray);
+      }
+      h5 {
+        color: var(--black);
+        font-weight: 500;
+      }
+    }
+  }
+  .Menu_contact {
+    @extend .Menu_adress;
+    .text {
+      h5 {
+        color: var(--black);
+      }
+    }
+  }
+
+  .categories{
+    width: 100%;
+    border-top: 1.5px solid var(--gray);
+    .category{
+      padding: 15px 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: .9rem;
+      cursor: pointer;
+      border-radius: 7px;
+      color: var(--black);
+      &:hover{
+        background-color: #D9D9D9;
+      }
+      svg{
+        font-size: .8rem;
+        color: var(--gray);
+      }
+    }
+  }
+}
+@media screen and (477px < width < 1090px) {
+  .Menu {
+    padding: 25px;
+    gap: 20px;
+  
+    .Menu_adress {
+      .text {
+        p {
+          font-size: 1rem;
+        }
+        h5 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+}
