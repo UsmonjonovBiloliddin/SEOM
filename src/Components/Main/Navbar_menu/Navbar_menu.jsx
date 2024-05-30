@@ -17,7 +17,7 @@ const Menu = () => {
     <div className={state.Manuopen ? "Menu active " : "Menu"}>
       <Link>
         <div className="Menu_logo">
-          <img src="/public/images/Logo.png" alt="" />
+          <img src="../images/Logo.png" alt="" />
           <div className="text">
             <p>Sanitariya-epidemiologik </p>
             <p>osoyishtalik markazi</p>

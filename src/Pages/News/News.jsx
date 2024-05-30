@@ -1,8 +1,9 @@
-import React from 'react'
-
+import "./News.scss"
 const News = () => {
   return (
-    <div>News</div>
+    <div className='News'>
+        <p>News</p>
+    </div>
   )
 }
 

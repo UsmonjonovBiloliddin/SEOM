@@ -12,3 +12,4 @@ export {default as HomeManagement} from "../Components/HomeComponents/Management
 export {default as HomeReferences} from "../Components/HomeComponents/References/References"
 export {default as HomeSubscribe} from "../Components/HomeComponents/Subscribe/Subscribe"
 export {default as ChangeModal} from "../Components/Main/ChangeModal/Modal"
+export {default as News} from "../Pages/News/News"

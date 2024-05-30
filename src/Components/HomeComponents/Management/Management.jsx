@@ -15,7 +15,7 @@ const Management = () => {
       <div className="Management_items">
         <div className="Management_item">
           <div className="img">
-            <img src="/public/images/Managment.png" alt="" />
+            <img src="../images/Managment.png" alt="" />
           </div>
 
           <div className="text">
@@ -52,7 +52,7 @@ const Management = () => {
         </div>
         <div className="Management_item">
           <div className="img">
-            <img src="/public/images/Managment.png" alt="" />
+            <img src="../images/Managment.png" alt="" />
           </div>
 
           <div className="text">

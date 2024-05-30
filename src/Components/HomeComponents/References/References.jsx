@@ -54,42 +54,42 @@ const References = () => {
             }}
           >
             <SwiperSlide>
-              <img src="/public/images/gerb.png" alt="" />
+              <img src="../images/gerb.png" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/public/images/nishon.png" alt="" />
+              <img src="../images/nishon.png" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/public/images/gerb.png" alt="" />
+              <img src="../images/gerb.png" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/public/images/nishon.png" alt="" />
+              <img src="../images/nishon.png" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/public/images/gerb.png" alt="" />
+              <img src="../images/gerb.png" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/public/images/nishon.png" alt="" />
+              <img src="../images/nishon.png" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.

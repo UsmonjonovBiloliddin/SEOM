@@ -18,9 +18,11 @@ const Yangiliklar = () => {
     <div className="Yangiliklar">
       <div className="Yangiliklar_text">
         <h1>Yangiliklar</h1>
-        <button>
-          Barcha yangiliklar <FaArrowRightLong />
-        </button>
+        <Link to={"/News"}>
+          <button>
+            Barcha yangiliklar <FaArrowRightLong />
+          </button>
+        </Link>
       </div>
       <div className="Yangiliklar_Swiper">
         <div className="swiper">
@@ -53,7 +55,7 @@ const Yangiliklar = () => {
           >
             <SwiperSlide>
               <div className="swiperSlide">
-                <img src="/public/images/Yangiliklarimg.png" alt="" />
+                <img src="../images/Yangiliklarimg.png" alt="" />
                 <p>
                   {" "}
                   <CiCalendarDate />
@@ -67,7 +69,7 @@ const Yangiliklar = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiperSlide">
-                <img src="/public/images/Yangiliklarimg.png" alt="" />
+                <img src="../images/Yangiliklarimg.png" alt="" />
                 <p>
                   {" "}
                   <CiCalendarDate />
@@ -81,7 +83,7 @@ const Yangiliklar = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiperSlide">
-                <img src="/public/images/Yangiliklarimg.png" alt="" />
+                <img src="../images/Yangiliklarimg.png" alt="" />
                 <p>
                   {" "}
                   <CiCalendarDate />
@@ -95,7 +97,7 @@ const Yangiliklar = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiperSlide">
-                <img src="/public/images/Yangiliklarimg.png" alt="" />
+                <img src="../images/Yangiliklarimg.png" alt="" />
                 <p>
                   {" "}
                   <CiCalendarDate />
@@ -109,7 +111,7 @@ const Yangiliklar = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiperSlide">
-                <img src="/public/images/Yangiliklarimg.png" alt="" />
+                <img src="../images/Yangiliklarimg.png" alt="" />
                 <p>
                   {" "}
                   <CiCalendarDate />
@@ -123,7 +125,7 @@ const Yangiliklar = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiperSlide">
-                <img src="/public/images/Yangiliklarimg.png" alt="" />
+                <img src="../images/Yangiliklarimg.png" alt="" />
                 <p>
                   {" "}
                   <CiCalendarDate />

@@ -22,7 +22,7 @@ const Navbar = () => {
           <HiBars3 className="bars" onClick={() => openManu()} />
           <Link>
             <div className="Navbar_top_left_logo">
-              <img src="/public/images/Logo.png" alt="" />
+              <img src="../images/Logo.png" alt="" />
               <div className="text">
                 <p>Sanitariya-epidemiologik </p>
                 <p>osoyishtalik markazi</p>
