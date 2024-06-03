@@ -1,0 +1,63 @@
+@use "../../Components/Varible/Varible.scss" as *;
+
+.leadership {
+  padding: 10px 80px 60px 80px;
+  .leadership_main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .main_left,
+    .main_right {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (width < 480px) {
+  .leadership {
+    padding: 20px 20px 40px 20px;
+    .leadership_main {
+      margin-top: 18px;
+      flex-direction: column;
+      .main_left,
+      .main_right {
+        gap: 18px;
+      }
+    }
+  }
+}
+@media screen and (480px < width < 720px) {
+  .leadership {
+    padding: 26px 26px 40px 26px;
+    .leadership_main {
+      margin-top: 20px;
+      flex-direction: column;
+      .main_left,
+      .main_right {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media screen and (720px < width < 1000px) {
+  .leadership {
+    padding: 30px 30px 40px 30px;
+    .leadership_main{
+    gap: 20px;
+    }
+  }
+}
+@media screen and (1000px < width < 1200px) {
+  .leadership {
+    padding: 30px 30px 40px 30px;
+    .leadership_main {
+      margin-top: 20px;
+      .main_left,
+      .main_right {
+        gap: 20px;
+      }
+    }
+  }
+}

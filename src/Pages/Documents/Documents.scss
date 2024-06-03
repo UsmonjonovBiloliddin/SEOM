@@ -1,0 +1,59 @@
+@use "../../Components/Varible/Varible.scss"as * ;
+
+.Documents{
+    width: 100%;
+    h1{
+        font-size: 2em;
+        color: var(--mainText2);
+    }
+    .pagination {
+        width: 100%;
+        margin-top: 20px;
+        @include center;
+    
+        .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+          background-color:var(--main);
+          color: var(--white);
+      }
+      .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{
+        background-color: var(--white);
+        color: var(--mainText2);
+      }
+      li{
+        &:first-child , &:last-child{
+          display: none;
+        }
+      }
+      
+      }
+}
+
+@media screen and (0px < width < 600px) {
+    .Documents{
+        width: 100%;
+        h1{
+            font-size: 1.1em;
+            color: var(--mainText2);
+        }
+    }
+}
+
+@media screen and (600px < width < 900px) {
+    .Documents{
+        width: 100%;
+        h1{
+            font-size: 1.5em;
+            color: var(--mainText2);
+        }
+    }
+}
+
+@media screen and (900px < width < 1300px) {
+    .Documents{
+        width: 100%;
+        h1{
+            font-size: 1.7em;
+            color: var(--mainText2);
+        }
+    }
+}

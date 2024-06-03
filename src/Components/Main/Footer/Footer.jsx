@@ -3,7 +3,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { IoCallOutline } from "react-icons/io5";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineNotListedLocation } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaInstagram, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -15,31 +15,31 @@ const Footer = () => {
           <p>Sanitariya-epidemiologik osoyishtalik markazi</p>
         </div>
         <div className="Contact">
-          <Link>
+          <NavLink>
             <div className="item">
               <div className="icon">
                 <SlLocationPin />
               </div>
               <p>Farg’ona viloyati, farg’ona shaxar, Boychechak 4</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="item">
               <div className="icon">
                 <IoCallOutline />
               </div>
               <p>+998 97 628 28 82</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="item">
               <div className="icon">
                 <HiOutlineMail />
               </div>
               <p>Faksa.the@gmail.com</p>
             </div>
-          </Link>
-          <Link>
+          </NavLink>
+          <NavLink>
             <div className="item">
               <div className="icon">
                 <MdOutlineNotListedLocation />
@@ -49,7 +49,7 @@ const Footer = () => {
                 Bunyodkor stadioni
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
       </div>
       <div className="Footer_right">
@@ -58,13 +58,13 @@ const Footer = () => {
             <h3>Vazirlik</h3>
             <ul>
               <li>
-                <Link>Umumiy ma’lumot</Link>
+                <NavLink to={"/malumot"}>Umumiy ma’lumot</NavLink>
               </li>
               <li>
-                <Link>Tarkiyib tuzilma</Link>
+                <NavLink to={"/Structure"}>Tarkiyib tuzilma</NavLink>
               </li>
               <li>
-                <Link>Xududiy boshqarmalar</Link>
+                <NavLink to={"/Administrations"}>Xududiy boshqarmalar</NavLink>
               </li>
             </ul>
           </div>
@@ -72,33 +72,16 @@ const Footer = () => {
             <h3>Hujjatlar</h3>
             <ul>
               <li>
-                <Link>Umumiy ma’lumot</Link>
+                <NavLink to={"/malumot"}>Umumiy ma’lumot</NavLink>
               </li>
               <li>
-                <Link>Raxbariyat </Link>
+                <NavLink to={"/LeaderShip"}>Raxbariyat </NavLink>
               </li>
               <li>
-                <Link>Tarkiyib tuzilma </Link>
+              <NavLink to={"/Structure"}>Tarkiyib tuzilma</NavLink>
               </li>
               <li>
-                <Link>Xududiy boshqarmalar</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="category">
-            <h3>Matbuot xizmati</h3>
-            <ul>
-              <li>
-                <Link>Yangiliklar</Link>
-              </li>
-              <li>
-                <Link>Uchrashuvlar</Link>
-              </li>
-              <li>
-                <Link>Tadbirlar</Link>
-              </li>
-              <li>
-                <Link>Xududiy boshqarmalar</Link>
+              <NavLink to={"/Administrations"}>Xududiy boshqarmalar</NavLink>
               </li>
             </ul>
           </div>
@@ -106,19 +89,36 @@ const Footer = () => {
             <h3>Matbuot xizmati</h3>
             <ul>
               <li>
-                <Link>Yangiliklar</Link>
+                <NavLink to={"/News"}>Yangiliklar</NavLink>
               </li>
               <li>
-                <Link>Uchrashuvlar</Link>
+                <NavLink to={"/Meetings"}>Uchrashuvlar</NavLink>
               </li>
               <li>
-                <Link>Tadbirlar</Link>
+                <NavLink to={"/Events"}>Tadbirlar</NavLink>
               </li>
               <li>
-                <Link>Tenderlar</Link>
+              <NavLink to={"/Administrations"}>Xududiy boshqarmalar</NavLink>
+              </li>
+            </ul>
+          </div>
+          <div className="category">
+            <h3>Matbuot xizmati</h3>
+            <ul>
+              <li>
+              <NavLink to={"/News"}>Yangiliklar</NavLink>
               </li>
               <li>
-                <Link>Majlislar</Link>
+              <NavLink to={"/Meetings"}>Uchrashuvlar</NavLink>
+              </li>
+              <li>
+              <NavLink to={"/Events"}>Tadbirlar</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/Tenders"}>Tenderlar</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/Majlislar"}>Majlislar</NavLink>
               </li>
             </ul>
           </div>
@@ -126,38 +126,38 @@ const Footer = () => {
         <div className="networks">
           <div className="text">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              Loem Ipsum is simply dummy text of the printing and typesetting
+              industry. Loem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.{" "}
+              electronic typesetting, emaining essentially unchanged.{" "}
             </p>
           </div>
           <div className="network">
             <p>Ijtimoiy tarmoqlar</p>
             <div className="boxes">
-              <Link>
+              <NavLink>
                 {" "}
                 <div className="box">
                   <FaTelegram />
                 </div>
-              </Link>
-              <Link>
+              </NavLink>
+              <NavLink>
                 <div className="box">
                   <FaInstagram />
                 </div>
-              </Link>
-              <Link>
+              </NavLink>
+              <NavLink>
                 <div className="box">
                   <FaYoutube />
                 </div>
-              </Link>
-              <Link>
+              </NavLink>
+              <NavLink>
                 <div className="box">
                   <FaWhatsapp />
                 </div>
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

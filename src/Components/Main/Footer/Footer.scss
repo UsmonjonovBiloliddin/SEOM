@@ -3,11 +3,11 @@
 .Footer {
   width: 100%;
   background-color: #00354a;
-  margin-top: 30px;
   padding: 50px 70px;
   color: rgb(216, 212, 212);
   display: flex;
   gap: 70px;
+  
   .Footer_left {
     width: 25%;
     .Logo {
@@ -34,11 +34,11 @@
           gap: 10px;
           margin: 15px 0px;
           p {
-            font-size: 0.9rem;
+            font-size: 0.9em;
           }
           svg {
             color: var(--main);
-            font-size: 1.1rem;
+            font-size: 1.1em;
           }
         }
       }
@@ -59,14 +59,16 @@
 
         h3 {
           color: #6a99ac;
-          font-size: 1.1rem;
+          font-size: 1.1em;
         }
         ul {
           li {
-            font-size: 1rem;
+            font-size: 1em;
             a {
               color: white;
-
+                &.active{
+                  color: var(--main);
+                }
               &:hover {
                 color: var(--main);
               }
@@ -82,7 +84,7 @@
       .text {
         width: 70%;
         p {
-          font-size: 0.8rem;
+          font-size: 0.8em;
           color: #82aec0;
         }
       }
@@ -92,7 +94,7 @@
         flex-direction: column;
         gap: 10px;
         p {
-          font-size: 0.9rem;
+          font-size: 0.9em;
           color: #6a99ac;
         }
         .boxes {
@@ -105,7 +107,7 @@
             border-radius: 7px;
             @include center;
             color: #169fd8;
-            font-size: 1.1rem;
+            font-size: 1.1em;
           }
         }
       }
@@ -145,11 +147,11 @@
         .category {
           width: auto;
           h3 {
-            font-size: 1rem;
+            font-size: 1em;
           }
           ul {
             li {
-              font-size: 0.9rem;
+              font-size: 0.9em;
             }
           }
         }
@@ -201,11 +203,11 @@
         .category {
           width: auto;
           h3 {
-            font-size: 1rem;
+            font-size: 1em;
           }
           ul {
             li {
-              font-size: 0.9rem;
+              font-size: 0.9em;
             }
           }
         }

@@ -1,0 +1,77 @@
+.Other {
+  width: 100%;
+  padding: 0px 0px 0px  30px;
+  .Other_text {
+    h2 {
+      font-weight: 500;
+    }
+  }
+  .Other_boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .Other_box {
+      width: 100%;
+      display: flex;
+      padding: 12px;
+      box-shadow: 0px 3px 7px 1px rgba(95, 94, 94, 0.19);
+      gap: 10px;
+      border-radius: 7px;
+      margin-top: 20px;
+      
+      .box_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--black);
+        h3 {
+          font-size: 0.9em;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 0.8em;
+          color: #bcbcbc;
+          gap: 10px;
+          svg {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (0px < width < 600px ) {
+  .Other {
+    padding: 0px 0px 0px  0px;
+    .Other_boxes {
+      .Other_box {
+        .box_text {
+          justify-content: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (600px < width < 1000px ) {
+  .Other {
+    padding: 0px 0px 0px  0px;
+    .Other_boxes {
+      justify-content: space-between;
+      .Other_box {
+        width: 49%;
+        .box_text {
+          justify-content: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  
+}

@@ -5,6 +5,7 @@
   height: auto;
   background-color: var(--background);
   padding: 40px 0px;
+  
   .Yangiliklar_text {
     width: 100%;
     display: flex;
@@ -13,7 +14,7 @@
     padding: 0px 70px;
 
     h1 {
-      font-size: 2rem;
+      font-size: 2em;
       color: var(--mainText2);
       font-weight: 600;
     }
@@ -23,7 +24,7 @@
       color: var(--main);
       @include center;
       gap: 10px;
-      font-size: 0.9rem;
+      font-size: 0.9em;
       padding: 10px 40px;
       border: 1px solid #b3bec5;
       border-radius: 7px;
@@ -54,16 +55,16 @@
         }
         p {
           color: var(--gray);
-          font-size: 0.8rem;
+          font-size: 0.8em;
           display: flex;
           align-items: center;
           gap: 10px;
           svg {
-            font-size: 1rem;
+            font-size: 1em;
           }
         }
         h5 {
-          font-size: 1.1rem;
+          font-size: 1.1em;
           line-height: 25px;
           color: var(--black);
         }
@@ -72,11 +73,11 @@
           display: flex;
           align-items: center;
           gap: 10px;
-          font-size: 1rem;
+          font-size: 1em;
           font-weight: 600;
           margin-top: 10px;
           svg {
-            font-size: 0.8rem;
+            font-size: 0.8em;
           }
         }
       }
@@ -108,13 +109,15 @@
     .Yangiliklar_text {
       padding: 0px 15px;
       h1 {
-        font-size: 1.3rem;
+        font-size: 1.3em;
       }
+     a{
       button {
         gap: 10px;
-        font-size: 0.8rem;
-        padding: 7px 10px;
+        font-size: 0.7em;
+        padding: 7px 20px;
       }
+     }
     }
 
     .Yangiliklar_Swiper {
@@ -123,13 +126,13 @@
         .swiper-slide {
           padding: 15px;
           p {
-            font-size: 0.7rem;
+            font-size: 0.7em;
           }
           h5 {
-            font-size: 0.9rem;
+            font-size: 0.9em;
           }
           a {
-            font-size: 0.9rem;
+            font-size: 0.9em;
           }
         }
       }
@@ -143,11 +146,11 @@
     .Yangiliklar_text {
       padding: 0px 30px;
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
       button {
         gap: 10px;
-        font-size: 0.9rem;
+        font-size: 0.9em;
         padding: 7px 17px;
       }
     }
@@ -160,13 +163,13 @@
         .swiper-slide {
           padding: 10px;
           p {
-            font-size: 0.7rem;
+            font-size: 0.7em;
           }
           h5 {
-            font-size: 0.7rem;
+            font-size: 0.7em;
           }
           a {
-            font-size: 0.7rem;
+            font-size: 0.7em;
           }
         }
       }
@@ -180,11 +183,11 @@
     .Yangiliklar_text {
       padding: 0px 30px;
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
       button {
         gap: 10px;
-        font-size: 0.9rem;
+        font-size: 0.9em;
         padding: 7px 17px;
       }
     }
@@ -197,13 +200,13 @@
         .swiper-slide {
           padding: 15px;
           p {
-            font-size: 0.8rem;
+            font-size: 0.8em;
           }
           h5 {
-            font-size: 0.9rem;
+            font-size: 0.9em;
           }
           a {
-            font-size: 0.8rem;
+            font-size: 0.8em;
           }
         }
       }
@@ -220,11 +223,11 @@
     .Yangiliklar_text {
       padding: 0px 40px;
       h1 {
-        font-size: 1.7rem;
+        font-size: 1.7em;
       }
       button {
         gap: 10px;
-        font-size: 1rem;
+        font-size: 1em;
         padding: 7px 20px;
       }
     }
@@ -237,13 +240,13 @@
         .swiper-slide {
           padding: 15px;
           p {
-            font-size: 0.8rem;
+            font-size: 0.8em;
           }
           h5 {
-            font-size: 0.9rem;
+            font-size: 0.9em;
           }
           a {
-            font-size: 0.8rem;
+            font-size: 0.8em;
           }
         }
       }

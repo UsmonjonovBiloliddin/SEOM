@@ -56,42 +56,42 @@ const References = () => {
             <SwiperSlide>
               <img src="../images/gerb.png" alt="" />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Loem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
               <img src="../images/nishon.png" alt="" />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Loem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
               <img src="../images/gerb.png" alt="" />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Loem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
               <img src="../images/nishon.png" alt="" />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Loem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
               <img src="../images/gerb.png" alt="" />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Loem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>
             <SwiperSlide>
               <img src="../images/nishon.png" alt="" />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Loem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
             </SwiperSlide>

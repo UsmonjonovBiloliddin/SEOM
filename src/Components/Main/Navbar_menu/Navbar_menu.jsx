@@ -31,7 +31,7 @@ const Menu = () => {
         </div>
         <div className="text">
           <p>Manzil</p>
-          <h5>Farg'ona Viloyati Lorem Ipsum is simply dummy text</h5>
+          <h5>Farg'ona Viloyati Loem Ipsum is simply dummy text</h5>
         </div>
       </div>
       <div className="Menu_contact">

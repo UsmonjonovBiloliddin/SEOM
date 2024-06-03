@@ -1,23 +1,23 @@
 import "./Background.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { NavManuBackround, SignBackraund } from "../../../Slice/BackraundSlice";
+import { NavManuBackround, SearchBackround, SignBackraund } from "../../../Slice/BackraundSlice";
 const Background = () => {
-  const { Signopen, Manuopen } = useSelector((state) => state.background);
+  const {  Manuopen , Searchopen  } = useSelector((state) => state.background);
   const dispatch = useDispatch();
 
   const closeBack = () => {
     if (Manuopen) {
       dispatch(NavManuBackround());
     }
-    if (Signopen) {
-      dispatch(SignBackraund());
+    if (Searchopen) {
+      dispatch(SearchBackround());
     }
   };
   return (
     <>
       <div
         onClick={() => closeBack()}
-        className={Signopen || Manuopen ? "Background active" : "Background"}
+        className={ Searchopen ||  Manuopen ? "Background active" : "Background"}
       ></div>
     </>
   );

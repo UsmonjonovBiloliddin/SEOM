@@ -1,0 +1,113 @@
+@use "../../Components/Varible/Varible.scss"as * ;
+.Document_inside{
+    width: 100%;
+    padding: 40px 70px 20px 70px;
+    display: flex;
+    gap: 20px;
+
+    .Document_inside_left{
+        width: 80%;
+        button{
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--background2);
+            border: none;
+            border-radius: 7px;
+            font-size: .8em;
+            color: var(--mainText2);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        h1{
+            margin: 20px 0px;
+            color: var(--mainText2);
+        }
+        .date{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0px;
+            span{
+                font-size: 1em;
+                color: var(--gray);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                svg{
+                    font-size: 1.2em;
+                }
+            }
+            button{
+                background-color: transparent;
+                color: var(--main);
+                font-size: 1em;
+            }
+        }
+        p{
+            margin-top: 20px;
+            color: var(--gray);
+        }
+    }
+    .Document_inside_right{
+        width: 20%;
+   }
+}
+
+@media screen and (0px < width < 900px) {
+    .Document_inside{
+        padding: 20px 15px 20px 15px;
+        flex-wrap: wrap;
+        .Document_inside_left{
+            width: 100%;
+            button{
+                padding: 12px 25px;
+            }
+            h1{
+                margin: 20px 0px;
+                font-size: 1.2em;
+            }
+            .date{
+                padding: 0px 0px;
+            }
+            p{
+                margin-top: 10px;
+            }
+        }
+        .Document_inside_right{
+            width: 100%;
+            p{
+                font-size: 1.5em;
+            }
+       }
+    }
+}
+
+@media screen and (900px < width < 1300px) {
+    .Document_inside{
+        padding: 20px 20px 20px 20px;
+        .Document_inside_left{
+            width: 70%;
+            button{
+                padding: 12px 25px;
+            }
+            h1{
+                margin: 20px 0px;
+                font-size: 1.2em;
+            }
+            .date{
+                padding: 0px 0px;
+            }
+            p{
+                margin-top: 10px;
+            }
+        }
+        .Document_inside_right{
+            width: 30%;
+            p{
+                font-size: 1.2em;
+            }
+       }
+    }
+}

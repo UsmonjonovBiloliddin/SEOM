@@ -14,13 +14,14 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const openManu = () => {
     dispatch(NavManuBackround());
+    
   };
   return (
     <div className="Navbar">
       <div className="Navbar_top">
         <div className="Navbar_top_left">
           <HiBars3 className="bars" onClick={() => openManu()} />
-          <Link>
+          <Link to={"/"}>
             <div className="Navbar_top_left_logo">
               <img src="../images/Logo.png" alt="" />
               <div className="text">
@@ -35,7 +36,7 @@ const Navbar = () => {
             </div>
             <div className="text">
               <p>Manzil</p>
-              <h5>Farg'ona Viloyati Lorem Ipsum is simply dummy text</h5>
+              <h5>Farg'ona Viloyati Loem Ipsum is simply dummy text</h5>
             </div>
           </div>
           <div className="Navbar_top_left_contact">
@@ -54,7 +55,7 @@ const Navbar = () => {
               <MdPhoneIphone />
             </div>
             <div className="icon" >
-              <MdOutlineRemoveRedEye  onClick={() => setOpenModal(!openModal)} />
+              <MdOutlineRemoveRedEye onClick={() => setOpenModal(!openModal)} />
               <ChangeModal openModal={openModal}/>
             </div>
           </div>

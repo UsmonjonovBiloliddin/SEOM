@@ -5,6 +5,7 @@ export const BackSlice = createSlice({
   initialState: {
     Signopen: false,
     Manuopen: false,
+    Searchopen:false,
     color:"Normal",
     size:"Medium"
   },
@@ -15,6 +16,9 @@ export const BackSlice = createSlice({
     NavManuBackround: (state) => {
       state.Manuopen = state.Manuopen ? false : true;
     },
+    SearchBackround: (state) => {
+      state.Searchopen = state.Searchopen ? false : true;
+    },
     changeColor: (state , action) => {
       state.color = action.payload
      },
@@ -24,6 +28,6 @@ export const BackSlice = createSlice({
   },
 });
 
-export const { SignBackraund, NavManuBackround , changeColor ,changeSize} = BackSlice.actions;
+export const {SearchBackround, SignBackraund, NavManuBackround , changeColor ,changeSize} = BackSlice.actions;
 
 export default BackSlice.reducer;

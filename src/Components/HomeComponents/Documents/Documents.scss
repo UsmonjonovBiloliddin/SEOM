@@ -1,23 +1,21 @@
 @use "../../Varible/Varible.scss"as * ;
-
 .Documents{
     width: 100%;
     height: auto;
     padding: 50px 70px;
-
     .Documents_text{
         width: 100%;
         height: auto;
         display: flex;
         justify-content: space-between;
         padding-bottom: 15px;
-
         h1{
             color:var(--mainText2);
-            font-size: 2rem;
+            font-size: 2em;
         }
-        button{
-            padding: 0px 35px;
+       a{
+           button{
+            padding: 7px 35px;
             @include center;
             gap: 15px;
             @include btnHover;
@@ -27,46 +25,9 @@
             color: var(--main);
             font-weight: 600;
         }
-    }
-
-    .Documents_boxes{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .Documents_box{
-            width: 250px;
-            padding: 20px;
-            border-radius: 7px;
-            background-color: var(--background2);
-            margin: 10px 0px;
-            text-align: center;
-            @include center;
-            flex-wrap: wrap;
-            @include borderHover;
-            h4{
-                margin: 15px 0px;
-                color: var(--black);
-                font-size: 1rem;
-            }
-            p{
-                color: var(--gray);
-                font-size: .8rem;
-            }
-            .radio{
-                width: 55px;
-                height: 55px;
-                border-radius: 50%;
-                background-color: var(--main);
-                color: var(--white);
-                @include center;
-                font-size: 1.4rem;
-            }
-        }
+       }
     }
 }
-
 @media screen and (0px < width < 510px) {
     .Documents{
         padding: 20px 15px;
@@ -74,30 +35,14 @@
         .Documents_text{
             padding-bottom: 10px;
             h1{
-                font-size: 1.5rem;
+                font-size: 1.5em;
             }
             button{
                 padding: 0px 15px;
             }
         }
-    
-        .Documents_boxes{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-    
-            .Documents_box{
-                width: 320px;
-               
-                h4{
-                    font-size:.9rem;
-                }
-            }
-        }
     }
 }
-
 @media screen and (510px < width < 750px) {
     .Documents{
         padding: 20px 25px;
@@ -105,26 +50,11 @@
         .Documents_text{
             padding-bottom: 10px;
             h1{
-                font-size: 1.5rem;
+                font-size: 1.5em;
             }
             button{
                 padding: 8px 20px;
-                font-size: .9rem;
-            }
-        }
-    
-        .Documents_boxes{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-    
-            .Documents_box{
-                width: 49%;
-               
-                h4{
-                    font-size:.9rem;
-                }
+                font-size: .9em;
             }
         }
     }
@@ -136,26 +66,11 @@
         .Documents_text{
             padding-bottom: 10px;
             h1{
-                font-size: 1.5rem;
+                font-size: 1.5em;
             }
             button{
                 padding: 8px 20px;
-                font-size: .9rem;
-            }
-        }
-    
-        .Documents_boxes{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-    
-            .Documents_box{
-                width: 250px;
-               
-                h4{
-                    font-size:.9rem;
-                }
+                font-size: .9em;
             }
         }
     }

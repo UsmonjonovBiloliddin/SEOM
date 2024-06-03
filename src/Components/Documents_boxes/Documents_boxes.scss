@@ -1,0 +1,95 @@
+@use "../Varible/Varible.scss" as *;
+
+.Documents_boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px;
+  a{
+    width: 250px;
+    .Documents_box {
+      width: 100%;
+      padding: 20px;
+      border-radius: 7px;
+      background-color: var(--background2);
+      margin: 10px 0px;
+      text-align: center;
+      @include center;
+      flex-wrap: wrap;
+      @include borderHover;
+      h4 {
+        margin: 15px 0px;
+        color: var(--black);
+        font-size: 1em;
+      }
+      p {
+        color: var(--gray);
+        font-size: 0.8em;
+      }
+      .radio {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: var(--main);
+        color: var(--white);
+        @include center;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+@media screen and (0px < width < 510px) {
+  .Documents_boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+   a{
+     width: 320px;
+    .Documents_box {
+      h4 {
+        font-size: 0.9em;
+      }
+    }
+   }
+  }
+}
+
+@media screen and (510px < width < 750px) {
+  .Documents_boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+      width: 49%; 
+      .Documents_box {
+        width: 100%;
+        h4 {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+@media screen and (750px < width < 1300px) {
+  .Documents_boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+   a{
+     width: 240px;
+    .Documents_box {
+      width: 100%;
+      h4 {
+        font-size: 0.9em;
+      }
+    }
+   }
+  }
+}

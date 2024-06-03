@@ -21,12 +21,12 @@
       flex-direction: column;
       @include borderHover;
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         padding: 5px;
         color: var(--mainText2);
       }
       p {
-        font-size: 0.9rem;
+        font-size: 0.9em;
         color: var(--gray);
       }
     }
@@ -54,10 +54,10 @@
           }
         }
         h4 {
-          font-size: 1.1rem;
+          font-size: 1.1em;
         }
         p {
-          font-size: 0.8rem;
+          font-size: 0.8em;
         }
       }
     }
@@ -85,10 +85,10 @@
           }
         }
         h4 {
-          font-size: 1.1rem;
+          font-size: 1.1em;
         }
         p {
-          font-size: 0.8rem;
+          font-size: 0.8em;
         }
       }
     }
@@ -116,10 +116,10 @@
           }
         }
         h4 {
-          font-size: 1.3rem;
+          font-size: 1.3em;
         }
         p {
-          font-size: 0.9rem;
+          font-size: 0.9em;
         }
       }
     }

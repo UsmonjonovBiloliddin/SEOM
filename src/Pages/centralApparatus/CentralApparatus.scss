@@ -1,0 +1,80 @@
+.centralApparatus {
+  padding: 0px 70px 30px 70px;
+  .centralApparatus_main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .main_left,
+    .main_right {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (width < 480px) {
+  .centralApparatus {
+    padding: 20px 20px 40px 20px;
+    .centralApparatus_top {
+      h1 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+    }
+    .centralApparatus_main {
+      margin-top: 18px;
+      flex-direction: column;
+      .main_left,
+      .main_right {
+        gap: 18px;
+      }
+    }
+  }
+}
+@media screen and (480px < width < 720px) {
+  .centralApparatus {
+    padding: 26px 26px 40px 26px;
+    .centralApparatus_top {
+      h1 {
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+    .centralApparatus_main {
+      margin-top: 20px;
+      flex-direction: column;
+      .main_left,
+      .main_right {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media screen and (720px < width < 1000px) {
+  .centralApparatus {
+    padding: 30px 30px 40px 30px;
+
+    .centralApparatus_top {
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+    .centralApparatus_main {
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (1000px < width < 1200px) {
+  .centralApparatus {
+    padding: 30px 30px 40px 30px;
+    .centralApparatus_main {
+      margin-top: 20px;
+      .main_left,
+      .main_right {
+        gap: 20px;
+      }
+    }
+  }
+}
