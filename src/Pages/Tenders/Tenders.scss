@@ -9,8 +9,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 10px;
+   a{
+     width: 300px;
     .Tenderlar_box {
-      width: 300px;
+      width: 100%;
       height: auto;
       padding: 15px;
       border-radius: 10px;
@@ -39,6 +41,7 @@
         }
       }
     }
+   }
   }
   .pagination {
     width: 100%;
@@ -67,12 +70,15 @@
     background-color: var(--white);
     .Tenderlar_boxes {
       justify-content: space-between;
+     a{
+       width: 48%;
       .Tenderlar_box {
-        width: 48%;
+       width: 100%;
         p {
          font-size: .9em;
         }
       }
+     }
     }
   }
 }
@@ -82,12 +88,15 @@
     background-color: var(--white);
     .Tenderlar_boxes {
       justify-content: space-between;
+    a{
+      width: 32%;
       .Tenderlar_box {
-        width: 32%;
+        width: 100%;
         p {
          font-size: 1.1em;
         }
       }
+    }
     }
   }
 }
@@ -97,12 +106,15 @@
     background-color: var(--white);
     .Tenderlar_boxes {
       justify-content: space-between;
+     a{
+       width: 24%;
       .Tenderlar_box {
-        width: 24%;
+        width: 100%;
         p {
          font-size: 1.1em;
         }
       }
+     }
     }
   }
 }

@@ -3,7 +3,7 @@ import "./Modal.scss"
 import { FormControl, FormControlLabel, Radio, RadioGroup, Slider } from '@mui/material'
 import { changeColor, changeSize } from '../../../Slice/BackraundSlice';
 import { useDispatch } from 'react-redux';
-const Modal = ({openModal}) => {
+const Modal = ({openModal , setOpenModal}) => {
     const dispatch = useDispatch();
     const changeColors = (color) => {
         dispatch(changeColor(color));
@@ -99,9 +99,7 @@ const Modal = ({openModal}) => {
       </div>
       
     </div>
-    <div className="close">
-      <p>Yopish</p>
-    </div>
+   
   </div>
   )
 }

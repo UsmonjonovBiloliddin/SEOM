@@ -56,7 +56,7 @@ const Navbar = () => {
             </div>
             <div className="icon" >
               <MdOutlineRemoveRedEye onClick={() => setOpenModal(!openModal)} />
-              <ChangeModal openModal={openModal}/>
+              <ChangeModal setOpenModal={setOpenModal} openModal={openModal}/>
             </div>
           </div>
 

@@ -16,7 +16,7 @@
     position: relative;
 
     .select {
-      width:160px;
+      width:165px;
       height: 50px;
       &.active {
         height: auto;
@@ -44,7 +44,7 @@
       .text {
         position: absolute;
         top: 50px;
-        width: 160px;
+        width: 165px;
         height: 0;
         overflow: hidden;
         z-index: 2;

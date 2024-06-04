@@ -12,9 +12,8 @@
     padding: 0px 20px;
     overflow: hidden;
     transition: all .3s linear;
-
     &.active{
-        height: 250px;
+        height: 210px;
         padding: 20px;
         border: 1px solid #9FA8B2;
         overflow: visible;
@@ -101,12 +100,5 @@
       }
      
     }
-    .close{
-      height: 30px;
-      border-top: 1px solid #9FA8B2;
-      margin-top: -10px;
-      @include center;
-      color: black;
-      font-size: 13px;
-    }
+  
   }
