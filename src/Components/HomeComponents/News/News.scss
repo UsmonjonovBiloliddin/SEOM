@@ -1,0 +1,260 @@
+@use "../../Varible/Varible.scss" as *;
+
+.Yangiliklar {
+  width: 100%;
+  height: auto;
+  background-color: var(--background);
+  padding: 40px 0px;
+  
+  .Yangiliklar_text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+
+    h1 {
+      font-size: 2em;
+      color: var(--mainText2);
+      font-weight: 600;
+    }
+   a{
+    width: 200px;
+    button {
+      width: 100%;
+      background-color: transparent;
+      color: var(--main);
+      @include center;
+      gap: 10px;
+      font-size: 0.8em;
+      padding: 10px 25px;
+      border: 1px solid #b3bec5;
+      border-radius: 7px;
+      font-weight: 600;
+      cursor: pointer;
+      @include btnHover;
+    }
+   }
+  }
+
+  .Yangiliklar_Swiper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 15px 60px;
+
+    .swiper {
+      padding: 10px 7px;
+      .swiper-slide {
+        height: auto;
+        padding:15px;
+        line-height: 30px;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0px 3px 7px 1px rgba(95, 94, 94, 0.19);
+        img {
+          width: 100%;
+        }
+        p {
+          color: var(--gray);
+          font-size: 0.8em;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          svg {
+            font-size: 1em;
+          }
+        }
+        h5 {
+          font-size: .9em;
+          line-height: 25px;
+          color: var(--black);
+        }
+        a {
+          color: var(--main);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: .9em;
+          font-weight: 600;
+          margin-top: 10px;
+          svg {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+    .Yangiliklar_swiper_buttons {
+      width: 93%;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+      position: absolute;
+      top: 50%;
+      justify-content: space-between;
+      z-index: 1;
+      .swiper_buttons_button {
+        width: 30px;
+        height: 30px;
+        @include center;
+        @include btnStyle;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@media screen and (0px < width < 500px) {
+  .Yangiliklar {
+    padding: 20px 0px;
+    border: none;
+    .Yangiliklar_text {
+      padding: 0px 15px;
+      h1 {
+        font-size: 1.3em;
+      }
+     a{
+      button {
+        gap: 10px;
+        font-size: 0.7em;
+        padding: 7px 20px;
+      }
+     }
+    }
+
+    .Yangiliklar_Swiper {
+      padding: 15px 15px;
+      .swiper {
+        .swiper-slide {
+          padding: 15px;
+          p {
+            font-size: 0.7em;
+          }
+          h5 {
+            font-size: 0.9em;
+          }
+          a {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (500px < width < 700px) {
+  .Yangiliklar {
+    padding: 20px 0px;
+    border: none;
+    .Yangiliklar_text {
+      padding: 0px 30px;
+      h1 {
+        font-size: 1.5em;
+      }
+      button {
+        gap: 10px;
+        font-size: 0.9em;
+        padding: 7px 17px;
+      }
+    }
+
+    .Yangiliklar_Swiper {
+      padding: 15px 0px;
+
+      .swiper {
+        padding: 15px 15px;
+        .swiper-slide {
+          padding: 10px;
+          p {
+            font-size: 0.7em;
+          }
+          h5 {
+            font-size: 0.7em;
+          }
+          a {
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (700px < width < 900px) {
+  .Yangiliklar {
+    padding: 20px 0px;
+    border: none;
+    .Yangiliklar_text {
+      padding: 0px 30px;
+      h1 {
+        font-size: 1.5em;
+      }
+      button {
+        gap: 10px;
+        font-size: 0.9em;
+        padding: 7px 17px;
+      }
+    }
+
+    .Yangiliklar_Swiper {
+      padding: 15px 0px;
+
+      .swiper {
+        padding: 15px 15px;
+        .swiper-slide {
+          padding: 15px;
+          p {
+            font-size: 0.8em;
+          }
+          h5 {
+            font-size: 0.9em;
+          }
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+      .Yangiliklar_swiper_buttons {
+        width: 96%;
+      }
+    }
+  }
+}
+@media screen and (900px < width < 1300px) {
+  .Yangiliklar {
+    padding: 20px 0px;
+    border: none;
+    .Yangiliklar_text {
+      padding: 0px 40px;
+      h1 {
+        font-size: 1.7em;
+      }
+      button {
+        gap: 10px;
+        font-size: 1em;
+        padding: 7px 20px;
+      }
+    }
+
+    .Yangiliklar_Swiper {
+      padding: 15px 10px;
+
+      .swiper {
+        padding: 15px 15px;
+        .swiper-slide {
+          padding: 15px;
+          p {
+            font-size: 0.8em;
+          }
+          h5 {
+            font-size: 0.9em;
+          }
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+      .Yangiliklar_swiper_buttons {
+        width: 96%;
+      }
+    }
+  }
+}

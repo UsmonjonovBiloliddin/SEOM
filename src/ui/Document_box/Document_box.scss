@@ -1,0 +1,67 @@
+@use "../../Components/Varible/Varible.scss" as *;
+  a {
+    .Documents_box {
+      width: 300px;
+      padding: 20px;
+      border-radius: 7px;
+      background-color: var(--background2);
+      margin: 10px 0px;
+      gap: 15px;
+      text-align: center;
+      @include center;
+      flex-wrap: wrap;
+      @include borderHover;
+      h4 {
+        margin: 7px 0px;
+        color: var(--black);
+        font-size: .9em;
+      }
+      p {
+        color: var(--gray);
+        font-size: 0.8em;
+        margin-top: -20px;
+      }
+      .radio {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: var(--main);
+        color: var(--white);
+        @include center;
+        font-size: 1.4em;
+      }
+    }
+  }
+@media screen and (510px < width < 750px) {
+    a {
+      width: 48%;
+      .Documents_box {
+        width: 100%;
+        h4 {
+          font-size: 0.9em;
+        }
+      }
+    }
+}
+@media screen and (750px < width < 1000px) {
+    a {
+      width: 32%;
+      .Documents_box {
+        width: 100%;
+        h4 {
+          font-size: 0.9em;
+        }
+    }
+  }
+}
+@media screen and (1000px < width < 1400px) {
+  a {
+    width: 24%;
+    .Documents_box {
+      width: 100%;
+      h4 {
+        font-size: 0.9em;
+      }
+  }
+}
+}

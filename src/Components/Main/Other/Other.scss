@@ -1,0 +1,52 @@
+.Other {
+  width: 100%;
+  padding: 0px 0px 0px  30px;
+  .Other_text {
+    h2 {
+      font-weight: 400;
+    }
+  }
+  .Other_boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+   a{
+    width: 100%;
+    .Other_box {
+      width: 100%;
+      display: flex;
+      padding: 12px;
+      box-shadow: 0px 3px 7px 1px rgba(95, 94, 94, 0.19);
+      gap: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+
+      &:hover{
+        box-shadow: 0px 3px 10px 5px rgba(95, 94, 94, 0.19);
+      }
+      .box_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--black);
+        h3 {
+          font-size: 0.9em;
+          font-weight:500;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 0.8em;
+          color:var(--gray);
+          gap: 10px;
+          svg {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+   }
+  }
+}

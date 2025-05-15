@@ -1,0 +1,39 @@
+
+@use "../Varible/colors.scss"as * ;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin btnStyle {
+  background-color: var(--main);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--hover);
+  }
+  &:active {
+    background-color: var(--main);
+  }
+}
+@mixin btnHover {
+  &:hover {
+    background-color: var(--hover);
+    color: var(--white);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: var(--main);
+    cursor: pointer;
+  }
+}
+@mixin borderHover {
+  &:hover {
+    padding: 18px;
+    border: 2px solid var(--main);
+    cursor: pointer;
+  }
+}
+

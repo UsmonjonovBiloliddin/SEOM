@@ -1,0 +1,194 @@
+@use "../../Components/Varible/Varible.scss" as *;
+.Meetings {
+  width: 100%;
+  padding: 0px 70px 40px 70px;
+  background-color: var(--background);
+  .Meetings_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    .Meetings_boxes_box {
+      width: 650px;
+      height: auto;
+      background-color: var(--white);
+      padding: 15px;
+      gap: 15px;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0px 3px 7px 1px rgba(95, 94, 94, 0.19);
+      margin: 10px 0px;
+      .img {
+        img {
+          width: 260px;
+          height: 210px;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+        span {
+          color: var(--gray);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.8em;
+          svg {
+            font-size: 1.1em;
+          }
+        }
+        h3 {
+          text-transform: lowercase;
+          color: var(--black);
+          font-size: 1.1em;
+        }
+        p {
+          color: var(--gray);
+        }
+        a {
+          color: var(--main);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.9em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 100%;
+    margin-top: 20px;
+    @include center;
+    flex-wrap: wrap;
+    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+      background-color: var(--main);
+      color: var(--white);
+    }
+    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
+      background-color: var(--white);
+      color: var(--mainText2);
+    }
+    li {
+      &:first-child,
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (0px < width < 500px) {
+  .Meetings {
+    padding: 0px 15px 20px 15px;
+    background-color: var(--white);
+    .Meetings_boxes {
+      justify-content: center;
+      .Meetings_boxes_box {
+        width: 400px;
+        gap: 10px;
+        flex-wrap: wrap;
+        .img {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .text {
+          gap: 10px;
+          span {
+            font-size: 0.9em;
+          }
+          p {
+            font-size: 0.9em;
+          }
+          a {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (500px < width < 860px) {
+  .Meetings {
+    padding: 0px 20px 20px 20px;
+    background-color: var(--white);
+    .Meetings_boxes {
+      justify-content: space-between;
+      .Meetings_boxes_box {
+        width: 48%;
+        gap: 10px;
+        flex-wrap: wrap;
+        .img {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .text {
+          gap: 10px;
+          span {
+            font-size: 0.8em;
+          }
+          h3 {
+            font-size: 1em;
+          }
+          p {
+            font-size: 0.9em;
+          }
+          a {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (860px < width < 1300px) {
+  .Meetings {
+    padding: 0px 20px 20px 25px;
+    background-color: var(--white);
+    .Meetings_boxes {
+      justify-content: space-between;
+      .Meetings_boxes_box {
+        width: 32%;
+        gap: 10px;
+        flex-wrap: wrap;
+        .img {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .text {
+          gap: 10px;
+          span {
+            font-size: 0.9em;
+          }
+          h3 {
+            font-size: 1.2em;
+          }
+          p {
+            font-size: 1em;
+          }
+          a {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (1300px < width < 1460px) {
+  .Meetings {
+    padding: 0px 20px 20px 20px;
+    background-color: var(--white);
+    .Meetings_boxes {
+      .Meetings_boxes_box {
+        width: 48%;
+      }
+    }
+  }
+}

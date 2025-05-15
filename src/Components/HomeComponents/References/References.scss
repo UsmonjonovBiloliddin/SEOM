@@ -1,0 +1,124 @@
+@use "../../Varible/Varible.scss" as *;
+.References {
+  width: 100%;
+  height: auto;
+  padding: 50px 50px 0px 50px;
+  .Reference_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    h1 {
+      font-size: 1.9em;
+      color: var(--mainText2);
+    }
+    .Reference_swiper_buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+      .swiper_buttons_button {
+        width: 35px;
+        height: 35px;
+        @include center;
+        @include btnStyle;
+        border-radius: 50%;
+      }
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    .swiper-slide {
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.204);
+      border-radius: 10px;
+      background-color: var(--white2);
+
+      img {
+        width: 80px;
+        padding: 20px 0px;
+      }
+      p {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 1em;
+        color: var(--black);
+      }
+    }
+  }
+}
+@media screen and (0px < width < 500px) {
+  .References {
+    padding: 20px 0px 0px 0px;
+    
+    .Reference_text {
+      padding: 0px 20px;
+      h1 {
+        font-size: 1.3em;
+      }
+    }
+    .swiper {
+      .swiper-slide {
+        padding: 20px 10px;
+        img {
+          width: 70px;
+          padding: 10px 0px;
+        }
+        p {
+          font-size: 0.9em;
+          color: var(--black);
+        }
+      }
+    }
+  }
+}
+@media screen and (500px < width < 900px) {
+  .References {
+    padding: 20px 0px;
+    .Reference_text {
+      padding: 0px 20px;
+      h1 {
+        font-size: 1.3em;
+      }
+    }
+    .swiper {
+      .swiper-slide {
+        padding: 20px 10px;
+        img {
+          width: 70px;
+          padding: 10px 0px;
+        }
+        p {
+          font-size: 0.9em;
+          color: var(--black);
+        }
+      }
+    }
+  }
+}
+@media screen and (900px < width < 1300px) {
+  .References {
+    padding: 20px 0px;
+    .Reference_text {
+      padding: 0px 20px;
+      h1 {
+        font-size: 1.3em;
+      }
+    }
+    .swiper {
+      .swiper-slide {
+        padding: 20px 10px;
+        img {
+          width: 70px;
+          padding: 10px 0px;
+        }
+        p {
+          font-size: 0.9em;
+          color: var(--black);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@use "../../Varible/Varible.scss" as *;
+
+.Modal {
+  position: absolute;
+  top: 44px;
+  width: 220px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+  z-index: 4;
+  height: 0px;
+  padding: 0px 20px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  &.active {
+    height: 210px;
+    padding: 20px;
+    border: 1px solid #9fa8b2;
+    overflow: hidden;
+  }
+  .kub {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    top: -10px;
+    z-index: 0;
+    border-left: 1px solid #9fa8b2;
+    border-top: 1px solid #9fa8b2;
+  }
+  .text {
+    color: #031e39;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .colors {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0px;
+    border-top: 1px solid #9fa8b2;
+    margin-top: 10px;
+    .colors_colors {
+      display: flex;
+      gap: 30px;
+    }
+    .color {
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+
+      .css-1hbvpl3-MuiSvgIcon-root {
+        width: 16px;
+        margin-top: -10px;
+      }
+      .css-11zohuh-MuiSvgIcon-root {
+        margin-right: 3.9px;
+        left: -3.9px;
+        margin-top: -10px;
+      }
+      .box {
+        width: 35px;
+        height: 35px;
+        border-radius: 7px;
+      }
+      p {
+        font-size: 10px;
+        margin-top: 3px;
+        color: black;
+      }
+    }
+  }
+  .size {
+    margin-top: -12px;
+    color: black;
+    border-top: 1px solid #9fa8b2;
+    padding: 10px 0px;
+
+    .slider {
+      padding: 0px 8px;
+      .css-188mx6n-MuiSlider-root {
+        font-size: 10px;
+      }
+      .css-cp2j25-MuiSlider-thumb {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

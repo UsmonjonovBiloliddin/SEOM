@@ -1,0 +1,44 @@
+:root .Normal {
+  --white: #ffffff;
+  --white2: #ffffff;
+  --black: black;
+  --main: #169fd8;
+  --mainText: #169fd8;
+  --mainText2: #043d54;
+  --hover: #268cb8;
+  --gray: #2a2b2b;
+  --background: #f7f9fa;
+  --background2: #f1f6f9;
+  --bordercolor: #dbe4e9;
+  --Main_manu:#169fd8;
+  --Search:#d2dde3;
+}
+:root .Dark {
+  --white: #000000;
+  --white2: #1b1b1b;
+  --black: rgb(255, 255, 255);
+  --main: #169fd8;
+  --mainText: #169fd8;
+  --mainText2: #ced5d7;
+  --hover: #268cb8;
+  --gray: #cdcdcd;
+  --background2: #1b1b1b;
+  --bordercolor: #414040;
+  --Main_manu:#3d3d3d;
+  --Search:#222224;
+}
+:root .Gray {
+  filter: grayscale(1);
+  --Main_manu:#3d3d3d;
+  --main: #646060;
+  --Search:#68686c;
+}
+:root .Big {
+  font-size: 17px;
+}
+:root .Medium {
+  font-size: 16px;
+}
+:root .Small {
+  font-size: 13px;
+}

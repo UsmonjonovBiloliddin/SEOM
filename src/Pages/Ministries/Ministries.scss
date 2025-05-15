@@ -1,0 +1,92 @@
+@use "../../Components/Varible/Varible.scss"as * ;
+
+.Ministries{
+    width: 100%;
+    padding: 0px 70px 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    .Ministries_left{
+        width: 66%;
+        h1{
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: var(--mainText2);
+        }
+        p{
+            margin-top: 30px;
+            color: var(--gray);
+        }
+    }
+    .Ministries_right{
+        width: 30%;
+        padding: 10px 0px;
+    }
+}
+
+
+@media screen and (0px < width < 600px) {
+    .Ministries{
+        padding: 0px 15px 20px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .Ministries_left{
+            width: 100%;
+            h1{
+                font-size: 1.5em;
+            }
+            p{
+                margin-top: 15px;
+                color: var(--gray);
+            }
+        }
+        .Ministries_right{
+            display: none;
+        }
+    }
+}
+
+@media screen and (600px < width < 1000px) {
+    .Ministries{
+        padding: 0px 15px 20px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .Ministries_left{
+            width: 100%;
+            h1{
+                font-size: 1.5em;
+            }
+            p{
+                margin-top: 15px;
+                color: var(--gray);
+            }
+        }
+        .Ministries_right{
+        display: none;
+        }
+    }
+}
+
+@media screen and (1000px < width < 1300px) {
+    .Ministries{
+        padding: 0px 15px 20px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .Ministries_left{
+            width: 60%;
+            h1{
+                font-size: 1.8em;
+            }
+            p{
+                margin-top: 15px;
+                color: var(--gray);
+                font-size: 1.1em;
+            }
+        }
+        .Ministries_right{
+            width: 40%;
+        }
+    }
+}

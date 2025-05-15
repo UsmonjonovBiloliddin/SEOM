@@ -1,0 +1,155 @@
+@use "../../Components/Varible/Varible.scss" as *;
+.Tadbirlar {
+  width: 100%;
+  padding: 0px 70px 40px 70px;
+  background-color: var(--background);
+  .Tadbirlar_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    .Tadbirlar_box {
+      border: 2px solid #b3bec5;
+      padding: 15px;
+      margin: 10px 0px;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid var(--main);
+      }
+      .text {
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding-top: 10px;
+        span {
+          color: #bcbcbc;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.8em;
+          svg {
+            font-size: 1.1em;
+          }
+        }
+        h3 {
+          text-transform: lowercase;
+          color: var(--black);
+        }
+        p {
+          color: var(--gray);
+          font-size: 0.9em;
+        }
+        a {
+          color: var(--main);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.9em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 100%;
+    margin-top: 20px;
+    @include center;
+    flex-wrap: wrap;
+    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+      background-color: var(--main);
+      color: var(--white);
+    }
+    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root {
+      background-color: var(--white);
+      color: var(--mainText2);
+    }
+    li {
+      &:first-child,
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (0px <width <500px) {
+  .Tadbirlar {
+    padding: 0px 15px 20px 15px;
+    background-color: var(--white);
+    .Tadbirlar_boxes {
+      justify-content: center;
+      .Tadbirlar_box {
+        .text {
+          width: 100%;
+          span {
+            font-size: 0.9em;
+            svg {
+              font-size: 1.2em;
+            }
+          }
+          h3 {
+            font-size: 1.2em;
+          }
+          a {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (500px <width < 1000px) {
+  .Tadbirlar {
+    padding: 0px 20px 20px 25px;
+    background-color: var(--white);
+    .Tadbirlar_boxes {
+      justify-content: space-between;
+      .Tadbirlar_box {
+        width: 48%;
+        .text {
+          width: 100%;
+          span {
+            font-size: 0.9em;
+            svg {
+              font-size: 1.2em;
+            }
+          }
+          h3 {
+            font-size: 1.2em;
+          }
+          a {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (1000px <width < 1400px) {
+  .Tadbirlar {
+    padding: 0px 20px 20px 25px;
+    background-color: var(--white);
+    .Tadbirlar_boxes {
+      justify-content: space-between;
+      .Tadbirlar_box {
+        width: 32%;
+        .text {
+          width: 100%;
+          span {
+            font-size: 0.9em;
+            svg {
+              font-size: 1.2em;
+            }
+          }
+          h3 {
+            font-size: 1.2em;
+          }
+          a {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

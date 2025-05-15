@@ -1,0 +1,53 @@
+
+.Title {
+  padding: 30px 80px 10px 70px;
+    h3 {
+      font-size: 1em;
+      display: flex;
+      gap: 10px;
+      color: var(--black);
+      span {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        color: var(--gray);
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    h1 {
+      font-size: 1.9em;
+      font-weight: 700;
+      color: var(--mainText2);
+      margin-top: 20px;
+    }
+  }
+  @media screen and (0px < width < 600px) {
+    .Title {
+      padding: 15px 10px 10px 15px;
+        h3 {
+          font-size: .9em;
+          display: flex;
+          flex-wrap: wrap;
+          span{
+            height: auto;
+          }
+        }
+        h1 {
+          font-size: 1.5em;
+          margin-top: 10px;
+        }
+      }
+  }
+  @media screen and (600px < width < 1300px) {
+    .Title {
+      padding: 20px 80px 10px 20px;
+        h3 {
+          font-size: 1em;
+        }
+        h1 {
+          font-size: 2.2em;
+          margin-top: 10px;
+        }
+      }
+  }

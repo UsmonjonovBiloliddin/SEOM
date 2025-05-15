@@ -1,0 +1,19 @@
+@use "../Varible/Varible.scss" as *;
+
+.Documents_boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+@media screen and (0px < width < 510px) {
+  .Documents_boxes {
+    justify-content: center;
+  }
+}
+
+
+
+

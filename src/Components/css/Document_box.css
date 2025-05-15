@@ -1,0 +1,117 @@
+:root .Normal {
+  --white: #ffffff;
+  --white2: #ffffff;
+  --black: black;
+  --main: #169fd8;
+  --mainText: #169fd8;
+  --mainText2: #043d54;
+  --hover: #268cb8;
+  --gray: #2a2b2b;
+  --background: #f7f9fa;
+  --background2: #f1f6f9;
+  --bordercolor: #dbe4e9;
+  --Main_manu:#169fd8;
+  --Search:#d2dde3;
+}
+
+:root .Dark {
+  --white: #000000;
+  --white2: #1b1b1b;
+  --black: rgb(255, 255, 255);
+  --main: #169fd8;
+  --mainText: #169fd8;
+  --mainText2: #ced5d7;
+  --hover: #268cb8;
+  --gray: #cdcdcd;
+  --background2: #1b1b1b;
+  --bordercolor: #414040;
+  --Main_manu:#3d3d3d;
+  --Search:#222224;
+}
+
+:root .Gray {
+  filter: grayscale(1);
+  --Main_manu:#3d3d3d;
+  --main: #646060;
+  --Search:#68686c;
+}
+
+:root .Big {
+  font-size: 17px;
+}
+
+:root .Medium {
+  font-size: 16px;
+}
+
+:root .Small {
+  font-size: 13px;
+}
+
+a .Documents_box {
+  width: 300px;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: var(--background2);
+  margin: 10px 0px;
+  gap: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a .Documents_box:hover {
+  padding: 18px;
+  border: 2px solid var(--main);
+  cursor: pointer;
+}
+a .Documents_box h4 {
+  margin: 7px 0px;
+  color: var(--black);
+  font-size: 0.9em;
+}
+a .Documents_box p {
+  color: var(--gray);
+  font-size: 0.8em;
+  margin-top: -20px;
+}
+a .Documents_box .radio {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--main);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+@media screen and (0px < width < 510px) {
+  .Docoment_Box a {
+    width: 320px;
+  }
+  .Docoment_Box a .Documents_box h4 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (510px < width < 750px) {
+  .Docoment_Box a {
+    width: 40%;
+  }
+  .Docoment_Box a .Documents_box h4 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (750px < width < 1300px) {
+  .Docoment_Box a {
+    width: 240px;
+  }
+  .Docoment_Box a .Documents_box {
+    width: 100%;
+  }
+  .Docoment_Box a .Documents_box h4 {
+    font-size: 0.9em;
+  }
+}/*# sourceMappingURL=Document_box.css.map */

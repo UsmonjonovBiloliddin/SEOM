@@ -1,0 +1,103 @@
+@use "../../Components/Varible/Varible.scss"as * ;
+
+.Administrations_inside{
+    width: 100%;
+    padding: 0px 70px 60px 70px ;
+    .Administrations_inside_box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .text{
+            width: 60%;
+
+            h1{
+                font-size: 1.8em;
+                color: var(--gray);
+            }
+            p{
+                margin-top: 30px;
+                line-height: 25px;
+                color: var(--gray);
+            }
+            .about{
+                margin-top: 20px;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                    color: var(--black);
+                    p{
+                        color: var(--black);
+                        margin: 0;
+                    }
+                    svg {
+                      color: var(--main);
+                    }
+                  }
+            }
+        }
+        .img{
+            width: 35%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (0px < width < 800px) {
+    .Administrations_inside{
+        padding: 0px 15px 60px 15px ;
+        .Administrations_inside_box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column-reverse;
+            .text{
+                width: 100%;
+                h1{
+                    font-size: 1.7em;
+                    margin-top: 10px;
+                    color: var(--mainText2);
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: .9em;
+                }
+            }
+            .img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (800px < width < 1200px) {
+    .Administrations_inside{
+        padding: 0px 15px 60px 15px ;
+        .Administrations_inside_box{
+            display: flex;
+            justify-content: space-between;
+            .text{
+                width: 65%;
+                h1{
+                    font-size: 1.7em;
+                    color: var(--mainText2);
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: .9em;
+                }
+            }
+            .img{
+                width: 33%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

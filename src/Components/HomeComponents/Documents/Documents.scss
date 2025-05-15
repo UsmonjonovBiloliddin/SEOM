@@ -1,0 +1,78 @@
+@use "../../Varible/Varible.scss"as * ;
+.Documents{
+    width: 100%;
+    height: auto;
+    padding: 50px 70px;
+    .Documents_text{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        h1{
+            color:var(--mainText2);
+            font-size: 2em;
+        }
+       a{
+        width: 150px;
+           button{
+            padding: 7px 35px;
+            @include center;
+            gap: 15px;
+            @include btnHover;
+            background-color: transparent;
+            border-radius: 7px;
+            border: 1px solid #b3bec5;
+            color: var(--main);
+            font-weight: 600;
+        }
+       }
+    }
+}
+@media screen and (0px < width < 510px) {
+    .Documents{
+        padding: 20px 15px;
+    
+        .Documents_text{
+            padding-bottom: 10px;
+            h1{
+                font-size: 1.5em;
+            }
+            button{
+                padding: 0px 15px;
+            }
+        }
+    }
+}
+@media screen and (510px < width < 750px) {
+    .Documents{
+        padding: 20px 25px;
+    
+        .Documents_text{
+            padding-bottom: 10px;
+            h1{
+                font-size: 1.5em;
+            }
+            button{
+                padding: 8px 20px;
+                font-size: .9em;
+            }
+        }
+    }
+}
+@media screen and (750px < width < 1300px) {
+    .Documents{
+        padding: 20px 25px;
+    
+        .Documents_text{
+            padding-bottom: 10px;
+            h1{
+                font-size: 1.5em;
+            }
+            button{
+                padding: 8px 20px;
+                font-size: .9em;
+            }
+        }
+    }
+}

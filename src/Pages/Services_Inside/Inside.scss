@@ -1,0 +1,153 @@
+@use "../../Components/Varible/Varible.scss" as *;
+
+.Inside {
+  width: 100%;
+  padding: 40px 70px 40px 70px;
+  display: flex;
+
+  .Inside_left {
+    padding: 0px 30px 0px 0px;
+    width: 70%;
+    .text {
+      .text_location {
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: var(--gray);
+        font-weight: 600;
+        p {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          color: var(--gray);
+          font-size: .9em;
+        }
+      }
+      .text_date {
+        p {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          color: var(--gray);
+          font-size: .9em;
+
+        }
+      }
+      h1 {
+        font-size: 1.9em;
+        margin-top: 20px;
+        color: var(--gray);
+      }
+      h4 {
+        font-size: 1em;
+        margin-top: 20px;
+        color: var(--gray);
+      }
+
+      .img_text {
+        margin-top: 20px;
+        img {
+          width: 100%;
+        }
+        p {
+          margin-top: 20px;
+          color: var(--gray);
+        }
+      }
+    }
+  }
+  .Inside_right {
+    width: 30%;
+  }
+}
+@media screen and (0px < width < 500px) {
+    .Inside {
+        padding: 10px 15px 40px 15px;
+        .Inside_left {
+          border-right:none;
+          padding: 0px 0px 0px 0px;
+          width: 100%;
+          .text {
+            h1 {
+              font-size: 1.5em;
+            }
+            h4 {
+              font-size: 1em;
+            }
+          }
+        }
+        .Inside_right {
+          display: none;
+        }
+      }
+      
+}
+
+@media screen and (500px < width < 1100px) {
+    .Inside {
+        padding: 10px 20px 40px 20px;
+        .Inside_left {
+          border-right:none;
+          padding: 0px 0px 0px 0px;
+          width: 100%;
+          .text {
+            .text_location {
+                font-size: 1.2em;
+              }
+              .text_date {
+                p {
+                  font-size: 1.1em;
+                }
+              }
+            h1 {
+              font-size: 1.5em;
+            }
+            h4 {
+              font-size: 1.1em;
+            }
+          }
+        }
+        .Inside_right {
+          display: none;
+        }
+      }
+      
+}
+
+@media screen and (1100px < width < 1400px) {
+    .Inside {
+        padding: 20px 40px 40px 40px;
+        .Inside_left {
+          border-right:none;
+          padding: 0px 0px 0px 0px;
+          width: 65%;
+          .text {
+            .text_location {
+                font-size: 1.3em;
+              }
+              .text_date {
+                p {
+                  font-size: 1.2em;
+                }
+              }
+            h1 {
+              font-size: 1.6em;
+            }
+            h4 {
+              font-size: 1.2em;
+            }
+
+
+            .img_text{
+                font-size: 1.4em;
+            }
+          }
+        }
+        .Inside_right {
+          width: 35%;
+          display: flex;
+        }
+      }
+      
+}

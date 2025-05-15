@@ -1,0 +1,126 @@
+@use "../../Varible/Varible.scss" as *;
+
+.AboutContact {
+  width: 100%;
+  padding: 10px 70px 30px 70px;
+  h2 {
+    padding: 20px 0px;
+    font-size: 1.2em;
+    color: var(--black);
+  }
+
+  .Contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .contactUs_map {
+      width: 650px;
+      height: 400px;
+    }
+    .main_left {
+      padding: 24px 0;
+      width: 48%;
+      border-radius: 12px;
+      border: 1px solid #dbe4e9;
+      color: var(--gray);
+      .step {
+        padding: 20px 50px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dbe4e9;
+        color: var(--black);
+        &:last-child {
+          border: none;
+        }
+        .step_left {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 1em;
+          font-weight: 400;
+          line-height: 28px;
+          color: #575a5b;
+        }
+        p {
+          width: 50%;
+          font-size: 1em;
+          font-weight: 500;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+@media screen and (0px < width < 900px) {
+  .AboutContact {
+    padding: 10px 15px 30px 15px;
+    h2 {
+      padding: 20px 0px;
+      font-size: 1.5em;
+      color: var(--black);
+    }
+    .Contact {
+      display: flex;
+      flex-wrap: wrap;
+      .contactUs_map {
+        width: 100%;
+        height: 350px;
+      }
+      .main_left {
+        padding: 10px 0;
+        width: 100%;
+        .step {
+          padding: 10px 20px;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+
+          .step_left {
+            width: 100%;
+          }
+          p {
+            width: 100%;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (900px < width < 1300px) {
+    .AboutContact {
+      padding: 10px 15px 30px 15px;
+      h2 {
+        padding: 20px 0px;
+        font-size: 1.5em;
+        color: var(--black);
+      }
+      .Contact {
+        display: flex;
+        .contactUs_map {
+          width: 100%;
+          height: 350px;
+        }
+        .main_left {
+          padding: 10px 0;
+          width: 100%;
+          .step {
+            padding: 10px 20px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+  
+            .step_left {
+              width: 100%;
+            }
+            p {
+              width: 100%;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }

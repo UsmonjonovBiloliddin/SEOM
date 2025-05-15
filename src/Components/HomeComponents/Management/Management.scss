@@ -1,0 +1,190 @@
+@use "../../Varible/Varible.scss" as *;
+
+.Management {
+  width: 100%;
+  height: auto;
+  padding: 40px 70px;
+  background-color: var(--background);
+  
+  .Management_text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      color: var(--mainText2);
+      font-size: 1.9em;
+    }
+  a{
+    width: 150px;
+    button {
+      padding: 7px 35px;
+      @include center;
+      gap: 15px;
+      @include btnHover;
+      background-color: transparent;
+      border-radius: 7px;
+      border: 1px solid #b3bec5;
+      color: var(--main);
+      font-weight: 600;
+    }
+  }
+  }
+  .Management_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+        .Management_item {
+          width: 750px;
+          height: auto;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding: 20px;
+          background-color:var(--background2);
+          border-radius: 10px;
+          margin: 15px 0px;
+          cursor: pointer;
+          box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.103);
+          .text {
+            h4 {
+              font-size: 1em;
+              color: var(--black);
+              margin-bottom: 20px;
+            }
+            .item {
+              display: flex;
+              gap: 10px;
+              margin-top: 10px;
+                color: var(--black);
+              svg {
+                color: var(--main);
+              }
+            }
+          }
+          border: 1px solid white;
+          &:hover{
+            border: 1px solid var(--main);
+          }
+        }
+        .Management_item_text {
+          @extend .Management_item;
+          width: 550px;
+          height: 245px;
+        }
+  }
+}
+
+@media screen and (0px < width < 500px) {
+  .Management {
+    padding: 20px 15px;
+    .Management_text {
+      align-items: center;
+      h1 {
+        font-size: 1.3em;
+      }
+      button {
+        padding: 10px 20px;
+      }
+    }
+    .Management_items {
+      justify-content: center;
+
+      .Management_item {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        .img {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (500px < width < 800px) {
+  .Management {
+    padding: 20px 20px;
+    .Management_text {
+      align-items: center;
+      h1 {
+        font-size: 1.2em;
+      }
+      button {
+        padding: 10px 22px;
+        border: 1px solid;
+      }
+    }
+    .Management_items {
+      justify-content: center;
+
+      a{
+        width: 100%;
+        .Management_item {
+          width: 100%;
+          height: auto;
+          padding: 15px;
+          .text {
+            h4 {
+              font-size: 0.9em;
+            }
+            .item {
+              p {
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+     
+    }
+  }
+}
+
+@media screen and (800px < width < 1440px) {
+    .Management {
+      padding: 20px 20px;
+      .Management_text {
+        align-items: center;
+        h1 {
+          font-size: 1.4em;
+        }
+        button {
+          padding: 10px 22px;
+        }
+      }
+      .Management_items {
+        display: flex;
+        justify-content: space-between;
+       .Management_item_a{
+        width: 59%;
+        .Management_item {
+          width: 100%;
+          height: auto;
+          margin: 10px 8px;
+          .text {
+            h4 {
+              font-size: 0.9em;
+            }
+            .item {
+              p {
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+       }
+       .Management_item_text_a{
+        width: 39%;
+        .Management_item_text {
+          width: 100%;
+        }
+       }
+      }
+    }
+  }
